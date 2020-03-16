@@ -1,0 +1,29 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center" style="height: 41rem;">
+    <div class="row">
+        <div class="m-auto" style="width: 29rem;">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h1 class="text-center mb-5">Login</h1>
+                    <%- include ('../partials/messages') %>
+                    <form action="/login" method="POST">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="Enter your email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="form-control"
+                                placeholder="Enter your password" />
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                    <p class="lead mt-5">
+                        Don't have an account? <a href="/register">Register</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

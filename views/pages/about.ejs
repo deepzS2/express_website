@@ -1,0 +1,30 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+    <h1>Team!</h1>
+    <h5>Use the team.json or remove this part</h5>
+    <p class="lead">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate commodi sequi deleniti cupiditate
+        inventore sed saepe, voluptatem explicabo accusantium libero dolores fugiat, nulla repellendus nam similique
+        illum eius tempora cumque?
+    </p>
+    <div class="row">
+        <% users.forEach(user => { %>
+        <div class="media">
+            <img src="<%= user.avatar %>" style="height: 250px;" class="img-responsive mr-3">
+            <div class="media-body">
+                <h5><%= user.name %></h5>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate recusandae quos distinctio, facilis
+                corporis nemo quaerat non aut nulla. Voluptatum autem nulla ratione ut, eveniet adipisci rem voluptatem
+                voluptates vero!
+            </div>
+        </div>
+        <% }) %>
+    </div>
+
+    <h1 class="mt-5">About us!</h1>
+    <p class="lead">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quos illum, quisquam saepe odio perspiciatis.
+        Ipsum nobis optio fugit quibusdam sint veritatis perferendis reiciendis vel, eaque ratione earum iure
+        voluptatum.
+    </p>
+</div>

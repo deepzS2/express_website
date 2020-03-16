@@ -1,0 +1,35 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+    <div class="row">
+        <div class="col-sm-offset-3 m-auto" style="width: 35rem;">
+            <div class="card card-body">
+                <h2 class="card-title">Contact us!</h2>
+                <p class="card-subtitle mb-2 text-muted">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fugiat. Nesciunt laudantium placeat
+                    accusantium illum architecto distinctio dolorum dolore voluptas delectus! Quasi corporis aut
+                    excepturi
+                    fuga dolore, voluptate quas. Fuga?
+                </p>
+                <form action="/contact" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" value="<%= name %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control" value="<%= email %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your message</label>
+                        <textarea name="message" rows="6" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group text-right">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
